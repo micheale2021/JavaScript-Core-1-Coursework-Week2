@@ -25,7 +25,10 @@ Write a function that:
 - removes any forward slashes (/) in each string
 - makes all strings all lowercase
 */
-function tidyUpStrings(arrayOfStrings) {}
+function tidyUpStrings(arrayOfStrings) {
+  spaceRemoved = arrayOfStrings.map(s => s.trim().replace("/", '').toLowerCase())
+  return spaceRemoved;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
